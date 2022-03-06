@@ -1,0 +1,79 @@
+:root {
+  --flyout-select-border-width: 1px;
+}
+
+.flyout-select {
+  margin: 0;
+  position: absolute;
+  max-width: 17.1875rem;
+  width: 17.1875rem;
+  right: 0;
+  top: 40px;
+  z-index: 2;
+}
+
+.flyout-select .flyout-select__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-width: 12.5rem;
+  max-height: 50vh;
+  border: none;
+  background: #fff;
+  border: 1px solid grey;
+  z-index: 9;
+  overflow: auto;
+  font-family: env(--body-font-en);
+}
+
+.flyout-select__list-item {
+  padding: 0.625rem 1rem 0.688rem 2.5rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+}
+
+.flyout-select__list-item:focus {
+  border: 1px solid black;
+  outline: none;
+}
+
+.flyout-select__list-item:hover {
+  background-color: grey;
+}
+
+.flyout-select__list-item--hover {
+  background-color: transparent;
+  position: relative;
+}
+
+.flyout-select__list-item--active {
+  position: relative;
+  background-color: black;
+  color: white;
+}
+
+/* .flyout-select__list-item-selected-icon {
+  display: none;
+}
+
+.flyout-select__list-item--active .flyout-select__list-item-selected-icon {
+  position: absolute;
+  left: env(--spacing-02);
+  display: flex;
+} */
+
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .flyout-select {
+    max-width: 13.875rem;
+    width: 13.875rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .flyout-select {
+    width: calc(100vw - 2rem);
+    max-width: calc(100vw - 2rem);
+  }
+}

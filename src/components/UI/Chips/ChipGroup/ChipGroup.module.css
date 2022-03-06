@@ -1,0 +1,52 @@
+.fieldset-reset {
+  border: none;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  min-inline-size: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-before: 0;
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+  -webkit-padding-after: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.content-alignment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.chip-group {
+  margin: 0;
+}
+
+.chip-group__legend {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.chip-group__value {
+  padding-left: 0.25rem;
+}
+
+.chip-group__chips {
+  line-height: 0;
+}
+
+.chip-group__chips div {
+  margin-right: 0.74rem;
+  margin-bottom: 0.74rem;
+}
+
+.chip-group__extra {
+  margin-left: 1.5rem;
+  align-self: flex-end;
+}

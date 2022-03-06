@@ -1,0 +1,40 @@
+.right-pane__sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.right-pane {
+  text-align: left;
+  padding-top: 3rem;
+}
+.right-pane__title {
+  font-size: 48px;
+  margin-top: 120px;
+  text-align: inherit;
+}
+
+.product-cation {
+  display: block;
+  text-align: inherit;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.chip-section {
+  margin-bottom: 1rem;
+}
+
+.add-cart-btn {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.right-pane__content-des {
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.arrow-icon {
+  padding-left: 12px;
+}

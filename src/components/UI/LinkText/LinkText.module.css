@@ -1,0 +1,10 @@
+.link-text {
+  text-decoration: underline;
+  overflow: visible; /* Edge */
+  -webkit-appearance: none;
+  margin: 0;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  color: #000;
+}

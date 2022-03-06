@@ -1,0 +1,147 @@
+.chip {
+  position: relative;
+  display: inline-block;
+  pointer-events: all;
+  vertical-align: top;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.chip__default-image {
+  display: none;
+}
+
+.chip__input {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  pointer-events: inherit;
+  border-radius: 0;
+  transition-property: border, outline;
+  transition-duration: 180ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.chip__input::-ms-check {
+  box-sizing: border-box;
+  background: none;
+  color: transparent;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+}
+
+.chip__label {
+  background: #fff;
+  text-align: center;
+  border: 1px solid #767676;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.chip__input:checked + .chip__label {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.chip__input:checked + .chip__label:before {
+  content: "";
+  position: absolute;
+  top: -0.3125rem;
+  right: -0.3125rem;
+  bottom: -0.3125rem;
+  left: -0.3125rem;
+  border: 2px solid #000;
+}
+
+.uq-ec-chip__input:not(.uq-ec-chip__input--product-tile):checked
+  + .uq-ec-chip__label:not(.uq-ec-chip__label--product-tile):before {
+  content: "";
+  position: absolute;
+  top: -0.3125rem;
+  right: -0.3125rem;
+  bottom: -0.3125rem;
+  left: -0.3125rem;
+  border: 2px solid #000;
+}
+
+.chip__label--with-image {
+  padding: 0;
+}
+
+.chip__input:active:not(:disabled) + .chip__label--with-image,
+.chip__input:checked + .chip__label--with-image {
+  background-size: cover;
+  color: black;
+  border: 1px solid #767676;
+}
+
+.chip__input:hover {
+  border: 1px solid #929292;
+}
+
+.chip__input:hover::-ms-check {
+  border: 1px solid #929292;
+}
+
+.chip__input:checked::-ms-check {
+  border: 2px solid #000;
+}
+
+.chip__input:hover {
+  border: 1px solid grey;
+}
+
+.chip__input:focus {
+  z-index: 1;
+  outline: 1px solid grey;
+}
+
+.chip__input:focus::-ms-check {
+  outline: none;
+}
+
+.chip__input:checked {
+  border: 1px solid grey;
+}
+
+.chip__input--disabled,
+.chip__input--disabled:hover {
+  border: none;
+}
+
+.chip__input--disabled:hover::-ms-check {
+  border: none;
+}
+
+.chip__strikethrough {
+  pointer-events: none;
+  position: absolute;
+  width: 34.5px;
+  height: 34.5px;
+  top: 0px;
+  left: -1px;
+  background: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) calc(50% - 0.8px),
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) calc(50% + 0.8px),
+    rgba(0, 0, 0, 0) 100%
+  );
+}

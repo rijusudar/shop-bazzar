@@ -1,0 +1,29 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  text-align: left;
+}
+
+.header__container {
+  height: 60px;
+  align-items: center;
+}
+
+.header__action {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+.header__action-icon {
+  margin-right: 0.75rem;
+}
+
+.header__action-icon:first-child {
+  margin-right: 0;
+}
